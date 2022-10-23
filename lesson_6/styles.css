@@ -1,0 +1,41 @@
+body {
+    background-color: grey;
+}
+
+thead {
+    font-size: 20pt;
+}
+
+tbody {
+    color: white;
+}
+
+tfoot {
+    color: darkkhaki;
+    font-weight: bold;
+}
+
+.iphone .phone::before {
+    content: "🍎";
+}
+
+.android .phone::before {
+    content: "🤖";
+}
+
+table .price::before {
+    content: "💵";
+}
+
+td, th {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+th {
+    border-top: 5px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
