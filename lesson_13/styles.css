@@ -298,7 +298,7 @@ q {
 .vacancy-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(190px, auto);
+    grid-auto-rows: minmax(190px, auto);
     gap: 24px;
 }
 
@@ -322,4 +322,111 @@ q {
     left: 20px;
     bottom: 20px;
     max-width: 300px;
+}
+
+.vacancy-box:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.vacancy-box:nth-child(2) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.vacancy-box:nth-child(5) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/* NEWS PAGE */
+.news-cards {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.news-icons {
+    width: 75px;
+    margin-bottom: 10px;
+}
+
+.news-cards .item {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.news-cards .text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.news-develop {
+    border-radius: 40px;
+    background: linear-gradient(145deg, #ffad00, #e69200);
+    box-shadow:  8px 8px 16px #c98000,
+                -8px -8px 16px #ffc400;
+}
+
+.news-develop-span {
+    color: #993300;
+}
+
+.news-develop img {
+    filter: invert(13%) sepia(97%) saturate(5256%) hue-rotate(41deg) brightness(93%) contrast(101%);
+}
+
+.news-industry {
+    border-radius: 40px;
+    background: linear-gradient(145deg, #0eff8a, #0ce474);
+    box-shadow:  8px 8px 16px #0ac866,
+                -8px -8px 16px #10ff9c;
+}
+
+.news-industry-span {
+    color: #017e3e;
+}
+
+.news-industry img {
+    filter: invert(32%) sepia(91%) saturate(854%) hue-rotate(113deg) brightness(87%) contrast(99%);
+}
+
+.news-team {
+    border-radius: 40px;
+    background: linear-gradient(145deg, #8a38ef, #742fc9);
+    box-shadow:  8px 8px 16px #6629b0,
+                -8px -8px 16px #9c3fff;
+}
+
+.news-team-span {
+    color: #3b116e;
+}
+
+.news-team img {
+    filter: invert(12%) sepia(95%) saturate(5978%) hue-rotate(270deg) brightness(43%) contrast(95%);
+}
+
+.glass {
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 30px;
+    margin: 30px 0;
+}
+
+.news-text {
+    font-size: 24px;
+}
+
+hr {
+    margin: 50px 0;
 }
