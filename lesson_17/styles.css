@@ -37,3 +37,31 @@ header {
     font-size: 2.5rem;
     padding: 10%;
 }
+
+.cards {
+    padding: 0 15%;
+}
+
+.faq {
+    padding: 5% 0;
+}
+
+.accordion {
+    padding: 0 8%;
+}
+
+.accord-sect {
+    background-color: rgb(2, 13, 100);
+    padding: 7% 0;
+}
+
+.mouse {
+    width: 350px;
+    opacity: 0.35;
+}
+
+footer {
+    font-size: 28px;
+    padding: 3% 0;
+    text-align: center;
+}
